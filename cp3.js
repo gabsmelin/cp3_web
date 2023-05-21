@@ -97,5 +97,8 @@ const mudarFundo = ()=>{
     container.style.color = "#fff"
     container.style.minHeight = "100vh"
 }
-
+const voltar = ()=>{
+    const container = document.querySelector(".container");
+    container.style = "";
+}
 
