@@ -31,3 +31,8 @@ inputSobrenome.addEventListener("keyup", () =>{
         labelSobrenome.setAttribute("style", "color: green;");
     }
 })
+
+// ---------------------------------
+
+const inputEmail = document.querySelector("#idEmail");
+const labelEmail = document.querySelector("label[for='idEmail']")
