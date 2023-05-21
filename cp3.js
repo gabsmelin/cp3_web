@@ -44,7 +44,7 @@ inputEmail.addEventListener("keyup", () =>{
     } else if(inputEmail.value.length == 0) {
         inputEmail.setAttribute("style", "outline-color: red;");
         labelEmail.setAttribute("style", "color: red;");
-    } else if(inputEmail.value.includes("@") == true) {
+    } else if(inputEmail.value.includes("@") == false) {
         inputEmail.setAttribute("style", "outline-color: red;");
         labelEmail.setAttribute("style", "color: red;");
     } else {
