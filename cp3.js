@@ -57,3 +57,19 @@ inputEmail.addEventListener("keyup", () =>{
 
 const inputSenha = document.querySelector("#idSenha");
 const labelSenha = document.querySelector("label[for='idSenha']")
+
+inputSenha.addEventListener("keyup", () =>{
+    if(inputSenha.value.length < 6) {
+        inputSenha.setAttribute("style", "outline-color: red;");
+        labelSenha.setAttribute("style", "color: red;");
+    } else if(inputSenha.value.length > 8) {
+        inputSenha.setAttribute("style", "outline-color: red;");
+        labelSenha.setAttribute("style", "color: red;");
+    } else if(inputSenha.value.length == 0) {
+        inputSenha.setAttribute("style", "outline-color: red;");
+        labelSenha.setAttribute("style", "color: red;");
+    } else {
+        inputSenha.setAttribute("style", "outline-color: green;");
+        labelSenha.setAttribute("style", "color: green;");
+    }
+})
