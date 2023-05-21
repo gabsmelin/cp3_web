@@ -15,6 +15,7 @@
     padding: 2% 2% 0% 0%;
 } 
 .botoes button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 10px;
     padding: 4px;
     font-size: 10px;
