@@ -36,3 +36,16 @@ inputSobrenome.addEventListener("keyup", () =>{
 
 const inputEmail = document.querySelector("#idEmail");
 const labelEmail = document.querySelector("label[for='idEmail']")
+
+inputEmail.addEventListener("keyup", () =>{
+    if(inputEmail.value.length < 5) {
+        inputEmail.setAttribute("style", "outline-color: red;");
+        labelEmail.setAttribute("style", "color: red;");
+    } else if(inputEmail.value.length == 0) {
+        inputEmail.setAttribute("style", "outline-color: red;");
+        labelEmail.setAttribute("style", "color: red;");
+    } else {
+        inputEmail.setAttribute("style", "outline-color: green;");
+        labelEmail.setAttribute("style", "color: green;");
+    }
+})
