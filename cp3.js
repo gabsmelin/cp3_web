@@ -88,3 +88,14 @@ inputConfirmacao.addEventListener("keyup", () =>{
         labelConfirmacao.setAttribute("style", "color: red;");
     }
 })
+
+//-------------------------------
+
+const mudarFundo = ()=>{
+    const container = document.querySelector(".container");
+    container.style.backgroundColor = "#000"
+    container.style.color = "#fff"
+    container.style.minHeight = "100vh"
+}
+
+
