@@ -102,3 +102,6 @@ const voltar = ()=>{
     container.style = "";
 }
 
+//-----------------------------------
+
+const eyePass = document.querySelector(".fa");
