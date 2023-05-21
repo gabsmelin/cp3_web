@@ -18,3 +18,13 @@ inputNome.addEventListener("keyup", () =>{
 
 const inputSobrenome = document.querySelector("#idSobrenome");
 const labelSobrenome = document.querySelector("label[for='idSobrenome']")
+
+inputSobrenome.addEventListener("keyup", () =>{
+    if(inputSobrenome.value.length < 5) {
+        inputSobrenome.setAttribute("style", "outline-color: red;");
+        labelSobrenome.setAttribute("style", "color: red;");
+    } else if(inputSobrenome.value.length == 0) {
+        inputSobrenome.setAttribute("style", "outline-color: red;");
+        labelSobrenome.setAttribute("style", "color: red;");
+    } 
+})
