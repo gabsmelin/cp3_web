@@ -13,3 +13,8 @@ inputNome.addEventListener("keyup", () =>{
         labelName.setAttribute("style", "color: green;");
     }
 })
+
+//---------------------------
+
+const inputSobrenome = document.querySelector("#idSobrenome");
+const labelSobrenome = document.querySelector("label[for='idSobrenome']")
