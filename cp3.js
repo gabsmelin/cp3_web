@@ -78,3 +78,13 @@ inputSenha.addEventListener("keyup", () =>{
 
 const inputConfirmacao = document.querySelector("#idConfirmacao");
 const labelConfirmacao = document.querySelector("label[for='idConfirmacao']")
+
+inputConfirmacao.addEventListener("keyup", () =>{
+    if(inputConfirmacao.value == inputSenha.value) {
+        inputConfirmacao.setAttribute("style", "outline-color: green;");
+        labelConfirmacao.setAttribute("style", "color: green;");
+    } else {
+        inputConfirmacao.setAttribute("style", "outline-color: red;");
+        labelConfirmacao.setAttribute("style", "color: red;");
+    }
+})
