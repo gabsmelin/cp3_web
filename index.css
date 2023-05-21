@@ -10,3 +10,9 @@
 
     
 }
+.botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 2% 2% 0% 0%;
+} 
