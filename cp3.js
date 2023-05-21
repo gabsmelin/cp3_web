@@ -26,5 +26,8 @@ inputSobrenome.addEventListener("keyup", () =>{
     } else if(inputSobrenome.value.length == 0) {
         inputSobrenome.setAttribute("style", "outline-color: red;");
         labelSobrenome.setAttribute("style", "color: red;");
-    } 
+    } else {
+        inputSobrenome.setAttribute("style", "outline-color: green;");
+        labelSobrenome.setAttribute("style", "color: green;");
+    }
 })
