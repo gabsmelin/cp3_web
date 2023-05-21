@@ -105,3 +105,16 @@ const voltar = ()=>{
 //-----------------------------------
 
 const eyePass = document.querySelector(".fa");
+
+eyePass.addEventListener("", ()=>{
+    if(inputSenha.getAttribute("type") == "password"){
+        inputSenha.setAttribute("type","text");
+        inputConfirmacao.setAttribute("type","text");
+        eyePass.setAttribute("class","fa fa-eye-slash");
+    }else{
+        inputSenha.setAttribute("type","password");
+        inputConfirmacao.setAttribute("type","password");
+        eyePass.setAttribute("class","fa fa-eye");
+    }
+
+});
